@@ -1,0 +1,141 @@
+// data types in JS
+ 
+primitive-> 
+
+ number (range),  bigint ,string,boolean, null,  undefined,symbol
+
+ Object-> 
+ null is a object type:
+ but undefined is type of undefined
+
+  type of NaN -> number -> Not a Number
+
+  Conversion Operation->>>>  let score=10
+                                let new=string(score)
+                                type of null to number is 0
+                                true=1 and false=0
+                                empty string is false in boolean datatype
+                                and a string with letters is true in boolean datatype
+Conversion Operation:  
+                        Console.log(+true) -> 1 will not increase the value
+                        Console.log(+"")->0
+                        prifix and postfix in mdn js
+                    
+Comparision :   type Script -> does and don'ts
+                console.log("1">2). true
+                console.log("02">1)  false.    it will convert automatically to number
+
+                console.log(null==0)     false
+                console.log(null>=0)    true
+                console.log(null>0)     false.     different behaviour in conversion
+
+                also with undefined
+                console.log(null==0)     false
+                console.log(null>=0)    false
+                console.log(null>0)     false.
+
+                stict check. 
+                console.log("2"===2)     //false
+
+
+Data types : 
+            # primitive  type   (7 categories ) these all are call by value
+            string ,number, boolean, null, undefined, Symbol(to make any value special) ,BigInt
+            # reference type or non-primitive. reference allocated in the memory
+
+            Array, objects(browser web events ), functions, 
+
+
+            two different Symbol type variables are never same  
+
+            const bigNumber=1222n
+
+            non-primitive
+
+            Array -> [1,2,3,4];
+            object -> let obj={
+                name:"shiv",
+                age:11
+            }
+
+
+store the function in the variable:
+            const fun=function(){
+                console.log("hello worldd")
+            }
+
+            special case of bigInt const bigNumber=3094829n.   -> is of the type Object
+    
+
+Memory Management in Java Script
+
+            primitive type : stack
+            non-primitive type : heap (change in anything will change in the main memory storage)
+
+
+String interpolation:
+            `` back ticks.  -> console.log(`My Name is ${} and i am studing in the college ${} `)
+
+            string definition in another way-> const nameString=new String("Shivaraj")
+                            This gives the name and vaule pairs.   
+                            0:S
+                            1:h
+                            2:i
+                            Key value pair access by nameString[0]
+                            console.log(gameName.__proto__);
+
+                             name.charAt(12)
+                             name.indexOf('s')
+
+                             name=shivaraj
+
+                             const newName=name.substring(0,4)      // This will not include last number
+
+                             using the slice:
+                             cost anotherName=name.slice(-8,4)      // this gives the last 3 characters.  .. can use the negative values
+
+                             using of .trime().   trim javascript mdn
+
+                            const name=shiv;
+                             .replace('shiv','SHIV')
+
+                             url.include("shiv')
+                             url.split('-')
+
+                             Number as a function()
+                             const number=new Number(100).  type is numbe. search for its property
+                             console.log(number)
+                             numebr.toFixed(2)    precision to 2 decimal
+
+                             number.toPrecision(3)       -> will give that many numbers   12323->12.3^3
+
+                             
+                             const hundreds=10000000
+                             console.log(hundreds.toLocaleString('en-IN'))
+
+
+                             (Number.) -> in web
+
+++++++++++++MATHC+++++++++++++++=
+                            
+                            console.log(Math)
+                            console.abs(-3)
+                            Math.round(4.3)
+                            Math.ceil(4.2).  -> upper value-> always upper value of an increased value
+                            Math.floor(4.9)
+                            Math.min(1,2,3,4);
+                            Math.random(). any value bw 0 and 1
+                            Math.random()*10+1.     (to avode of getting 0)
+
+
+
+
+
+
+                 
+
+
+                
+
+
+  

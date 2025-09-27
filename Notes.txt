@@ -21,7 +21,7 @@ Conversion Operation:
                         Console.log(+"")->0
                         prifix and postfix in mdn js
                     
-Comparision :   type Script -> does and don'ts
+Comparision :   type Script -> does and don't
                 console.log("1">2). true
                 console.log("02">1)  false.    it will convert automatically to number
 
@@ -39,7 +39,7 @@ Comparision :   type Script -> does and don'ts
 
 
 Data types : 
-            # primitive  type   (7 categories ) these all are call by value
+            # primitive type (7 categories ) these all are call by value
             string ,number, boolean, null, undefined, Symbol(to make any value special) ,BigInt
             # reference type or non-primitive. reference allocated in the memory
 
@@ -57,7 +57,6 @@ Data types :
                 name:"shiv",
                 age:11
             }
-
 
 store the function in the variable:
             const fun=function(){
@@ -96,7 +95,7 @@ String interpolation:
 
                              using of .trime().   trim javascript mdn
 
-                            const name=shiv;
+                             const name=shiv;
                              .replace('shiv','SHIV')
 
                              url.include("shiv')
@@ -117,7 +116,7 @@ String interpolation:
                              (Number.) -> in web
 
 ++++++++++++MATHC+++++++++++++++=
-                            
+          {                  
                             console.log(Math)
                             console.abs(-3)
                             Math.round(4.3)
@@ -127,9 +126,118 @@ String interpolation:
                             Math.random(). any value bw 0 and 1
                             Math.random()*10+1.     (to avode of getting 0)
 
+                      }
 
 
 
+Arrays--------------------
+
+      {
+          when copy of array-> shallow (share same reference )copy and deep copy(do not share same reference point)
+                methods of the array
+
+                const arr=new Array(1,2,3,4)
+                unshift and shift           -> add to front and delete from the front
+
+                .includes(2)
+                .indexOf(1)
+              const  newArray=myArray.join()  -> binds in a string and gives the same array as myArray.
+
+              newArray.slice(1,3)   -> make a slice from index 1 to 2        ->  this will not change the original array.
+              newArray.splice(1,3)      -> make a splice from inde 1 to 3 -> this will change thge change the original array.
+
+
+              {     combining of arrays;->>>>>>>>
+                arr1,arr2
+
+              combing two array with different methods.
+
+              arr1.push(arr2)       -> output will be as one element incread in the arr1
+              const ar3=arr1.concat(arr2)     -> output will be combing in a single array         (store in a another array)
+
+              const array4= [...arr1,...arr2]            -> spred operation 
+              
+              If we have a array with some number of arrays inside it. then use the "flat"
+              arry=[1,2,3,[14,4,5,[4,5,6]]]
+              arr2=arr.flat(infinity)       -> where we metion the depth of the number if array
+
+                }
+
+           { 
+            log(Array.isArray("shiv))   -> false
+            log(Array.from("hi"))       -> ['h','i']
+            Has different behaviou in from.object
+
+            s1=10
+            s2=23
+            s3=14
+            
+            Array.of(s1,s2,s4)          -> give me a array of those number
+            }
+
+
+      }
+
+
+
+
+    ------------------<.... Objects.......>----------------
+
+    {
+
+        singletone Object creation.
+    {    // Object literals
+            ->
+            const system = Symbol("key1)
+        const object={
+            name:"shiv",
+            roll_no:10,
+            disciplin:"computer sciece",
+            location:"India",
+            email: "shiv@mail.com",
+            days:["monday","tuesday"],
+            [system]="my1"                                      // if we have a bracket then it directly acts as symbol otherwise it will be strins as others.
+        }
+
+        log(object.name)
+        log(object["name"])
+
+        system.email="hsisk"
+        Object.freez(system)
+
+        // create a function here.
+        system.greet=function(){
+            log("hello world");
+        }
+
+        og(jsUser.greeting()) and other method is log(jsUser.greating)->>>>>>>>>>>>> reference 
+        this.name -------->refered to object
+
+                    }
+
+    {
+                const tinderUser=new Object() > this is singletone obejct
+                const tinderUser={}         -> this is non singletine Oject
+
+                We can neste the object one inside the others..
+
+                const newObj={
+                    emai:"shiv@mail",
+                    fullName:{
+                        UserFullName:{                              ???   use 
+                            firstName:"shvi",
+                            lastName:"chougala",
+                        }
+                    }
+                }
+
+
+
+
+            }
+
+
+    }
 
 
                  

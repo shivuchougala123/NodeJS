@@ -236,6 +236,105 @@ Arrays--------------------
 
             }
 
+            {
+                cosnt obj1={1:'a',2:'b'}
+                cosnt obj2={3:'a',4:'b'}
+
+                cosnt obj3={5:'a',6:'b'}
+
+                to merge all the arrays ->
+                   (1) const arrrayNew={obj1,obj2,obj3}
+                  (2)  const arrayNew1=Object.assign({},obj1,pbj2,obj3)
+                                the {} is cofirms that all the other objects are getting assigned to {}. not to any available arrays
+
+                (3) -> spead operation ->> {...obj1,...obj2,...obj3}
+              }       
+
+              {
+                get the keys and values from the object -> stores in an array.
+
+                Object.keys(ObjectName)
+                Object.values(ObjectName)
+             .length()
+                
+                .entries(ObjectName)        -> get all the information from the object . output as -> array[array of each key and value]
+
+                ObjectName.hasOwnProperty(isLogedIn)
+              }
+
+
+        
+    Object Destructurnig -> 
+
+                {
+                    const course={
+                        courseName:"js",
+                        languege:"hindi",
+                        courseInstructor:"shiv"
+                    }
+
+                    log(course.language)
+                    or
+                    const{courseInstructor:teacher}=course       log(teacher)       
+   
+                }
+
+
+
+-------------------------------<Functions>-----------------------------------------
+{
+
+{
+   
+     function userInfromation(name){
+                    return `${name} just logged In`
+                }
+
+                log(userInfromation())          -> different ouput that -> undefined just logged in
+                log(userInfromation(""))        -> just loggged in
+
+                function userInfromation(name="shivaraj"){
+                    if(name)
+                    return `${name} just logged In`
+                }
+
+                log(userInformation("shiv))                 -> this overwrites the name "shivaraj"
+
+}   
+
+            {
+                function nameOfFunction(...num1){
+                    return num1
+                }
+
+                log(nameOfFunction(10,20,30,40))            -> i want to give multiple values.
+
+                =>output is [10,20,30,40]
+
+                function nameOfFunction(value1,value2...num1){
+                    return num1
+                }
+
+                log(nameOfFunction(10,20,30,40)) 
+                =>output is [30,40]         The other two value are held in value1 and value2`
+ 
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
 
     }
 

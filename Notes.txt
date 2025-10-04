@@ -473,3 +473,101 @@ nullish coalescing operator (??)-------------------------->
 
         val1=10??20 log(val1)-> 10
         val1=null ?? 23 -> 23
+
+
+
+
+
+-------------------------------<MAP>-----------------------------------------
+
+
+for of loop and for in loop
+
+for of loop will not works for object but for in loop works
+cosnt map=new MAP()
+map.set(1,"INDIA")
+map.set(2,"US")
+map.set(3,"Russia")
+map.set(4,"chaina")
+
+
+for(const [key,val] of map );
+log(key val)
+
+
+loop for obj.
+for(const key in objectName)
+    .log()
+
+
+arraName.forEach(function(item){
+    log(item)
+})
+
+
+arraName.forEach((item)=>{
+    log(item)
+})
+                                                                    --------> call back function
+// we cann write the function outside and just call for each loop
+
+function printMe(item){
+    log(item);
+}
+arrayName.forEach(printMe) -> we have not given function but just a reference
+
+
+// another variant
+
+arraName.forEach((item,index,arr)=>{
+    log(item,index,arr)
+})
+
+
+
+// we can have forEach loop on aray of objects
+
+// use of filters
+
+const array=[1,2,3,4,5,6,7]
+
+const vals=array.filter((item)=>item>4)
+                                                        -> filter retuns some value
+log(vals)
+
+
+//
+const vals=array.filter((item)=>{
+    return item>4
+                                    we return item here
+})
+
+
+                arrayName.push(val)
+
+
+// use of map here
+
+const array=[1,2,3,4,5,6]
+const ar=array.map((value)=> value+10)
+log(ar )
+
+
+// Chaining....
+
+use multiple map or filter in the form of chain
+
+// use of the reduce ---------------------->
+const array=[1,2,3,4,5,5,6,7,8]
+
+
+const temp=array.reduce((acc,curentValue)=>{
+    return acc+currentValue
+},0)
+
+
+const temp=array.reduce((acc,curentValue)=>
+acc+currentValue
+,0)
+
+

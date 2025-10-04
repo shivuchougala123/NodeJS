@@ -395,6 +395,7 @@ behaviour scope in code envirment and in the browser is different
 
 
 -------------------------------<iife>-----------------------------------------
+
 {   
             Immediately invoked function expression
 
@@ -448,6 +449,27 @@ flow->
 -------------------------------<control Flow>-----------------------------------------
 
 {
-    
+    "break" is to break the controll flow.
+
+    -> if we dont put the break the case in switch,  then all the cases will get executed but not the default.
+
+
+    falsy value-> false,NaN,null,undefined,0,-0,bigInt 0n,"",
+
+    truthy values-> "0", 'false', " ", [], {}, function(){}-> empty function
+
+
+
+    To check whether the objct is empty or not->
+                if(Object.keys(objectName).length===0)  .log(empty object)          -> here function returns as a array
 
 }
+
+
+
+nullish coalescing operator (??)-------------------------->
+
+        for null and undefined
+
+        val1=10??20 log(val1)-> 10
+        val1=null ?? 23 -> 23

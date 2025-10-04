@@ -32,6 +32,7 @@ function chai() {
 // chai()
 
 
+
 const funn=( n ) => ({name:"shiv",age:n})
 
 console.log(funn(1));

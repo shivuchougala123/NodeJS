@@ -323,26 +323,56 @@ Arrays--------------------
         }
 
 
-
-
-
-
-
-
-
-
-
-
         }
+ 
+
+    } 
 
 
-    }
 
+-------------------------------<Scope>-----------------------------------------
+{    * Block scope and global scope
+behaviour scope in code envirment and in the browser is different
 
-                 
-
+# closures In js
+# DOM->document object model- html web page manupilate thorough js
 
                 
 
 
-  
+//----> store a function in a variable{
+    print(2)    // function call
+    funtion print(num){
+        log(num)
+    }
+
+    print1(2)       // this is function call . "gives error"
+   const temp= function print2(num)                                 { Expression type function}
+    log(num1)
+    
+    
+
+    Hoisting        ------------------------>
+
+}
+
+                }
+
+
+
+            
+
+
+
+
+-------------------------------<Arrow Function>-----------------------------------------
+  {
+    Arrow Function->s
+
+
+                    In brwoser -> Global object is Window:  if we run "this" in web console -> we get output as window
+                    But if we print log(this) _> in node enviorment -> gives as "{}" -> empty objects
+
+
+
+  }

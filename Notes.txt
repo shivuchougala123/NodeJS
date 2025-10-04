@@ -373,6 +373,81 @@ behaviour scope in code envirment and in the browser is different
                     In brwoser -> Global object is Window:  if we run "this" in web console -> we get output as window
                     But if we print log(this) _> in node enviorment -> gives as "{}" -> empty objects
 
+                // "this" is not working in functions....
 
+
+        const fun=()=>{
+
+
+            implecit return -> cosnt func= ()=>  a+b        -> no return for this
+
+                        we dont use the curly brace here->but the paranthesis
+
+                        -> even to return the object we wrap in the paranthesis
+
+            const funn=( n ) => ({name:"shiv",age:n})
+
+            console.log(funn(1));
+        }
 
   }
+
+
+
+-------------------------------<iife>-----------------------------------------
+{   
+            Immediately invoked function expression
+
+
+            we should have a semicolon at the end of the function.....
+
+            (()=>{
+                log("hello world)
+            })();
+
+            (function(){                    -> this is a named IIFE 
+                 console.log("hello world22");
+                
+             })();
+
+
+}
+
+
+
+
+
+-------------------------------<JavaScript Execution Context>-----------------------------------------
+
+1) global execution context -> {}
+2) function Execution context
+3) eval E C
+
+-> memory creation phase.
+-> Execution phase
+
+
+flow->
+
+1)gloabl execetion -> this
+2)memory phase-> all variables make them as undefined even if theyare assigned
+3)  put all the assigned values to their respective variable
+
+
+
+=> when function run-> creates->        newexecetional context creats (new Variables envirment+ execution thread )
+                            again memory creational and executional phse     delete after execution
+
+
+    return of values to blobal excutional context
+
+
+
+
+
+-------------------------------<control Flow>-----------------------------------------
+
+{
+    
+
+}
